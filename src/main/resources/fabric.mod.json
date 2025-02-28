@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tntimer",
+	"version": "${version}",
+	"name": "TNTimer",
+	"description": "Edit tnt timer with command.",
+	"authors": [
+		"DJAVELIN_"
+	],
+	"contact": {
+		"homepage": "https://djavelin.vercel.app/",
+		"sources": "https://github.com/MrDJAVELIN/tntimer"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tntimer.TNTimerMod"
+		],
+		"client": [
+			"com.tntimer.TNTimerClient"
+		]
+	},
+	"mixins": [
+		"tntimer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
